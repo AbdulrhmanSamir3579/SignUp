@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Yummy Site" />
+  <meta name="keywords" content="Yummy , موقع اكل" />
+  <title>Registeration</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+  <!--? ===============  FontAwesome6.2.1 Css File =============== -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <!--! Bootstrap Is Horrible -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <!--? ===============  Main Css File =============== -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <div id="contactPage" class="contact container-fluid m-auto w-100 d-flex align-items-center justify-content-center position-relative">
+      
+      <div class="container m-auto">
+        <h2 class="contact-header text-center fw-bold py-5">Register Now</h2>
+        <form class="registration mt-5">
+          <div class="registeration-table row g-1">
+            <div class="col-md-6 text-center">
+              <label for="firstName">
+                <input class="input form-control shadow" placeholder="First Name" type="text" id="firstName"
+                  minlength="3" required />
+
+                <ul class="input-requirements">
+                  <li>At least 3 characters long</li>
+                  <li>
+                    Must only contain letters and numbers (no special
+                    characters)
+                  </li>
+                </ul>
+              </label>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <label for="lastName">
+                <input class="input form-control shadow" placeholder="Last Name" type="text" id="lastName" minlength="3"
+                  required />
+
+                <ul class="input-requirements -danger ">
+                  <li>At least 3 characters long</li>
+                  <li>
+                    Must only contain letters and numbers (no special
+                    characters)
+                  </li>
+                </ul>
+              </label>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <label for="email">
+                <input class="input form-control shadow" placeholder="Email" type="text" id="email" minlength="3"
+                  required />
+
+                <ul class="input-requirements -danger ">
+                  <li>At least 7 characters long</li>
+                  <li>
+                    emails must end with --@gmail.com (no special characters
+                    except (@))
+                  </li>
+                </ul>
+              </label>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <label for="age">
+                <input class="input form-control shadow" type="text" id="age" minlength="1" maxlength="2" required
+                  placeholder="Age" />
+
+                <ul class="input-requirements -danger ">
+                  <li>At least 2 characters long</li>
+                  <li>
+                    age must be between less than 80 (no special characters)
+                  </li>
+                </ul>
+              </label>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <div class="pass"></div>
+              <label for="password">
+                <input class="input form-control shadow password" type="password" id="password" maxlength="100"
+                  minlength="8" required placeholder="Password" />
+
+                <ul class="input-requirements -danger ">
+                  <li>
+                    At least 8 characters long (and less than 100 characters)
+                  </li>
+                  <li>Contains at least 1 number</li>
+                  <li>Contains at least 1 lowercase letter</li>
+                  <li>Contains at least 1 uppercase letter</li>
+                  <li>Contains a special character (e.g. @ !)</li>
+                </ul>
+              </label>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <label for="password_repeat">
+                <input class="input form-control shadow" type="password" id="password_repeat" maxlength="100"
+                  minlength="8" required placeholder="Confirm Password" />
+                <ul class="input-requirements -danger ">
+                  <li>Password must be matched</li>
+                </ul>
+              </label>
+            </div>
+
+            <br />
+          </div>
+          <div class="col-12 text-center mt-5">
+            <input class="col-md-3 text-center m-auto btn btn-primary fs-3 offset-2" type="submit" />
+            <input class="col-md-3 text-center m-auto btn btn-danger fs-3 offset-2" type="reset" />
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!--! ============ Main Js File ============ -->
+  <script src="./js/jquery-3.6.3.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
+
+<button formaction=""> </button>

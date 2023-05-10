@@ -1,0 +1,125 @@
+/*? Basic Reset */
+
+:root {
+  --cold-white: rgb(245, 239, 239);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: var(--cold-white);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+i {
+  cursor: pointer;
+}
+
+.max-height{
+  max-height: 100vh;
+}
+
+li{
+  font-size: 1.6rem;
+}
+
+.input-requirements {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+  list-style: disc;
+  list-style-position: inside;
+  max-width: 400px;
+  margin: 10px auto;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.input-requirements li.invalid {
+  color: #e74c3c;
+}
+
+.input-requirements li.valid {
+  color: #2ecc6b;
+}
+
+.input-requirements li.valid:after {
+  display: inline-block;
+  padding-left: 10px;
+  content: "\2713";
+}
+
+input:not([type="submit"]):valid {
+  border-color: #2ecc71;
+}
+
+/* Hide and show related .input-requirements when interacting with input */
+
+input:not([type="submit"])+.input-requirements {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-out;
+}
+
+input:not([type="submit"]):hover+.input-requirements,
+input:not([type="submit"]):focus+.input-requirements,
+input:not([type="submit"]):active+.input-requirements {
+  max-height: 1000px;
+  /* any large number (bigger then the .input-requirements list) */
+  transition: max-height 1s ease-in;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  padding: 0;
+  font-weight: inherit;
+}
+
+.input {
+  height: 50px;
+  width: 30vw;
+  font-size: 2rem;
+  text-indent: 10px;
+}
+
+/* Page Styling */
+
+.contact{
+  padding:100px
+}
+.contact-header{
+  font-size: 3rem;
+  position: relative;
+  padding-bottom: 50px;
+}
+.contact-header::after{
+  content: '';
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: #09c;
+  position: absolute;
+  margin-bottom: 200px;
+
+}
